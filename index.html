@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ぱけ</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">
+        <img class="logo" src="./img/logo.png" alt="Logo">
+      </a>
+      <ul>
+        <li><a onclick="about()">僕のこと</a></li>
+        <li><a onclick="tool()">ツール</a></li>
+        <li><a onclick="contact()">お問い合わせ</a></li>
+      </ul>
+    </header>
+    <main>
+      <div id="about">
+        <h2 class="title">僕のこと</h2>
+        <h3 class="center">ようわかんことしてる人です</h3>
+      </div>
+      <div id="tool">
+        <h2 class="title">ツール</h2>
+        <hr style="margin: 20px;">
+        <h3 class="center">QRコードジェネレーター</h3>
+        <div class="center">
+          <label>テキスト</label>
+          <input type="text" id="qrtxt">
+          <input type="button" onclick="gen();" value="作成">
+          <div>
+            <img src="" id="qrcode" alt="QR">
+          </div>
+        </div>
+        <hr style="margin: 20px;">
+        <h3 class="center">自作ライブラリ</h3>
+        <a href="./js/pak-v1.js">Pak-v1.js</a>
+      </div>
+      <div id="contact">
+        <h2 class="title">お問い合わせ</h2>
+      </div>
+    </main>
+    <footer>&copy; 2024 ぱけ</footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
